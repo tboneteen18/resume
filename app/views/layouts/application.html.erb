@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+    <header>
+      <a href="<%= root_path %>">Home Page</a>
+      <a href="<%= about_path %>">About Page</a>
+      <a href="<%= work_history_path %>">Work_History Page</a>
+      <a href="<%= education_path %>">Education Page</a>
+    </header>
+    <section>
+    <%= yield %>
+    </section>
+    <footer>
+      copyright &copy <%= Time.now.year %>
+    </footer>
 </body>
 </html>

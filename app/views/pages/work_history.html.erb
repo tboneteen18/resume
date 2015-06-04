@@ -1,1 +1,7 @@
 work history page
+
+<div class="">
+  <% @work_history.each do |work_history|%>
+      <P><%= work_history.name %>, <%= work_history.years %></P>
+  <% end %>
+    </div>

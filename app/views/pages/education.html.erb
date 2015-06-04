@@ -1,1 +1,7 @@
-education page
+<h>Welcome to my education page</h>
+
+<div class="">
+  <% @education.each do |education|%>
+<P><%= link_to(education.name, education.years) %></P>
+<% end %>
+</div>
